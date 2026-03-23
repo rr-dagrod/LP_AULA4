@@ -1,0 +1,20 @@
+#include <stdio.h>
+    int main() {
+        int horas, min, total;
+        
+        printf("informe quantas horas trabalhou: ");
+        scanf("%d", &horas);
+        printf("minutos: ");
+        scanf("%d", &min);
+        
+        total=horas*60+min;
+
+        if (total>=480) {
+            printf("você adicionou %d minutos ao seu banco ", (total-480));
+        }
+        else {
+            printf("você retirou %d minutos do seu banco ", (480-total));
+        }
+        
+        return 0;
+    }

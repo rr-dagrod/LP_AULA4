@@ -1,0 +1,16 @@
+#include <stdio.h>
+    int main () {
+        float compra;
+        
+        printf("insira o valor da compra: ");
+        scanf("%f", &compra);
+        
+        if (compra > 50.00) {
+            printf("voce ganhou um brinde!\n");
+        }
+        else {
+            printf("se gastar mais %.2f, você ganhará um brinde", (50-compra));
+        }
+        
+        return 0;
+    }
