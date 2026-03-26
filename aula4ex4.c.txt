@@ -1,0 +1,19 @@
+#include <stdio.h>
+    int main() {
+        int n;
+        printf("Insira 1 para casais, 2 para Famílias com criança e 3 para Famílias ou Grupos:\n");
+        scanf("%d", & n);
+        
+        switch(n) {
+            case 1:
+                printf("Casal, Area jardim!");
+                break;
+            case 2:
+                printf("Familia com criança, Area brinquedos!");
+                break;
+        default:
+                printf("Família ou Grupo, Area VIP!");
+                break;
+        }
+        return 0;
+    }
